@@ -1,0 +1,6 @@
+{
+  "item.bindingmod.binding_clay_item": "Binding Clay",
+  "item.bindingmod.binding_module_item": "Binding Module",
+
+  "message.binding_module_item": "Binding Tier: %s"
+}
