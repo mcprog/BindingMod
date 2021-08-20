@@ -1,5 +1,6 @@
 package com.mcprog.bindingmod;
 
+import com.mcprog.bindingmod.setup.ClientSetup;
 import com.mcprog.bindingmod.setup.Registration;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -24,7 +25,7 @@ import java.util.stream.Collectors;
 public class BindingMod
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "bindingmod";
 
     public BindingMod() {
@@ -32,6 +33,7 @@ public class BindingMod
         Registration.init(bus);
 
         bus.addListener(this::setup);
+        bus.addListener(ClientSetup::setup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

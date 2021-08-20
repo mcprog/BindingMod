@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "bindingmod:integration_generator"
+    ]
+  },
+  "criteria": {
+    "hopper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:hopper"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bindingmod:integration_generator"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hopper",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,6 +1,9 @@
 {
   "item.bindingmod.binding_clay_item": "Binding Clay",
   "item.bindingmod.binding_module_item": "Binding Module",
+  "block.bindingmod.integration_generator": "Integration Generator",
 
-  "message.binding_module_item": "Binding Tier: %s"
+  "message.binding_module_item": "Binding Tier: %s",
+
+  "screen.bindingmod.integration_generator": "Integration Generator"
 }

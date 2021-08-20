@@ -19,6 +19,8 @@ public class Items extends ItemModelProvider {
 
         singleTextureSimple(Registration.BINDING_CLAY_ITEM, "item/binding_clay_item");
         singleTextureSimple(Registration.BINDING_MODULE_ITEM, "item/binding_module_item");
+
+        withExistingParent(Registration.INTEGRATION_GENERATOR_ITEM.get().getRegistryName().getPath(), new ResourceLocation(BindingMod.MODID, "block/integration_generator_off"));
     }
 
     private void singleTextureSimple(RegistryObject<Item> itemRegistryObject, String itemName) {
